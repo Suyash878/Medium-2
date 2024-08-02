@@ -1,6 +1,0 @@
-name = "project_medium"
-compatibility_date = "2024-07-30"
-
-[vars]
-DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiOWY4YzUzYTctMTE4My00ZjNkLWI3ZmUtOTAwM2U0YzYxNTlhIiwidGVuYW50X2lkIjoiMTFiNjViOThhMWMxY2UxNjViZDg3M2ZhYTFmNzgwNWRlODFhOWY0N2ZlNWVjM2Y3NDIzYmM4OWYyZDRmMWQ2ZiIsImludGVybmFsX3NlY3JldCI6IjQ3YWVjMzg5LTliNWMtNGQyYy1iNjM1LWE3MzlkMmY5NWFmNCJ9.dHznmETewmVee8_miFEkSypRMz-nurz7750gAEw2o5w"
-JWT_SECRET="31231"
