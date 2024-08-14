@@ -1,0 +1,18 @@
+{
+  "name": "@suyash_dev/medium-package-first",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@suyash_dev/common-medium": "^1.0.0",
+    "typescript": "^5.5.4",
+    "zod": "^3.23.8"
+  }
+}

@@ -7,6 +7,8 @@
   "dependencies": {
     "@prisma/client": "^5.18.0",
     "@prisma/extension-accelerate": "^1.1.0",
+    "@suyash_dev/common-medium": "^1.0.0",
+    "@suyash_dev/medium-package-first": "^1.0.0",
     "hono": "^4.5.3"
   },
   "devDependencies": {

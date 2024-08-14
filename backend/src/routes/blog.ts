@@ -59,7 +59,9 @@ blogRouter.post('/', async (c) => {
     })
 })
 
-blogRouter.put('/', async (c) => {
+blogRouter.put('/:id', async (c) => {
+
+    const id = c.req.param("id");
     const body = await c.req.json();
     const prisma = new PrismaClient({
       datasourceUrl: c.env.DATABASE_URL,
@@ -68,7 +70,7 @@ blogRouter.put('/', async (c) => {
   const blog = await  prisma.post.update({
     where:
     {
-        id: body.id
+        id: id
     },
     data:
     {
@@ -78,7 +80,7 @@ blogRouter.put('/', async (c) => {
   })
 
   return c.json({
-    id: blog.id
+    id: id
   })
 
 })
@@ -115,7 +117,7 @@ blogRouter.get('/:id', async (c) => {
 
   try 
   {
-    const blog = prisma.post.findFirst({
+    const blog = await prisma.post.findFirst({
         where: 
         {
             id: id 
@@ -133,7 +135,6 @@ blogRouter.get('/:id', async (c) => {
         message: "The request failed with error" + err
     })
   }
-
 })
 
 // TODO: Add Pagination 
